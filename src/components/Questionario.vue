@@ -16,13 +16,15 @@
           no questionário desenvolvido por Dickson Martins da Fonseca e coletar dados para análise de pesquisa sendo
           desenvolvida pela aluna finalista <a target="_blank" href="https://www.linkedin.com/in/dandara-lobo-081731197">Dandara Lobo</a> do 
           curso de Fisioterapia do <a target="_blank" href="https://fametro.edu.br/">CEUNI - FAMETRO</a>.
-          É aconselhável procurar um especialisra para diagnóstico e tratamento mais precisos.
+          É aconselhável procurar um especialista para diagnóstico e tratamento mais precisos.
           <br>
           Para visualizar a tabela de grau de acometimento, clique <a @click="modal_tabela = true">aqui</a>.
+          <v-btn block small color="primary" href="#perguntas">Responder questionário</v-btn>
         </v-alert>
+        
       </v-col>
 
-      <v-container>
+      <v-container id="perguntas">
         <v-row
           dense
           v-for="pergunta in perguntas"
