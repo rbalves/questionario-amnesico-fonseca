@@ -12,9 +12,13 @@
           <h1 class="display-1 font-weight-bold mb-3">
             Questionário Amnésico de Fonseca
           </h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis quam, facilisis at venenatis eu, posuere hendrerit elit.
+          O objetivo deste aplicativo web é fornecer um dignóstico inicial a respeito do grau de Disfunção Temporomandibular (DTM) com base
+          no questionário desenvolvido por Dickson Martins da Fonseca e coletar dados para análise de pesquisa sendo
+          desenvolvida pela aluna finalista <a target="_blank" href="https://www.linkedin.com/in/dandara-lobo-081731197">Dandara Lobo</a> do 
+          curso de Fisioterapia do <a target="_blank" href="https://fametro.edu.br/">CEUNI - FAMETRO</a>.
+          É aconselhável procurar um especialisra para diagnóstico e tratamento mais precisos.
           <br>
-          Para ver a tabela de grau de acometimento, clique <a @click="modal_tabela = true">aqui</a>.
+          Para visualizar a tabela de grau de acometimento, clique <a @click="modal_tabela = true">aqui</a>.
         </v-alert>
       </v-col>
 
