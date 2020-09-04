@@ -112,7 +112,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="item in graus_por_indice" :key="item.id">
+                  <tr v-for="item in Helpers.graus_por_indice" :key="item.id">
                     <td>{{ item.range }}</td>
                     <td>
                       <v-chip :color="item.cor" dark>{{ item.descricao }}</v-chip>
@@ -151,32 +151,6 @@
       color: '',
       modal_resultado: false,
       modal_tabela: false,
-      graus_por_indice: [
-        {
-          id: 1,
-          range: '0 - 15',
-          cor: 'green',
-          descricao: 'SEM DTM',
-        },
-        {
-          id: 2,
-          range: '20 - 40',
-          cor: 'orange',
-          descricao: 'DTM LEVE',
-        },
-        {
-          id: 3,
-          range: '45 - 65',
-          cor: 'yellow',
-          descricao: 'DTM MODERADA',
-        },
-        {
-          id: 4,
-          range: '70 - 100',
-          cor: 'red',
-          descricao: 'DTM SEVERA',
-        },
-      ],
       alternativas: [
         {
           id: 1,
