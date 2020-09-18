@@ -1,8 +1,12 @@
 <template>
   <v-container >
     <v-row class="text-center">
-
-      <v-col class="mb-4">
+      <v-container id="perguntas">
+        
+      <v-row
+          dense
+        >
+        <v-col class="mb-4">
         <v-alert
           border="top"
           colored-border
@@ -12,19 +16,11 @@
           <h1 class="display-1 font-weight-bold mb-3">
             Questionário Amnésico de Fonseca
           </h1>
-          O objetivo deste aplicativo web é fornecer um dignóstico inicial a respeito do grau de Disfunção Temporomandibular (DTM) com base
-          no questionário desenvolvido por Dickson Martins da Fonseca e coletar dados para análise de pesquisa sendo
-          desenvolvida pela aluna finalista <a target="_blank" href="https://www.linkedin.com/in/dandara-lobo-081731197">Dandara Lobo</a> do 
-          curso de Fisioterapia do <a target="_blank" href="https://fametro.edu.br/">CEUNI - FAMETRO</a>.
-          É aconselhável procurar um especialista para diagnóstico e tratamento mais precisos.
-          <br>
           Para visualizar a tabela de grau de acometimento, clique <a @click="modal_tabela = true">aqui</a>.
-          <v-btn block small color="primary" href="#perguntas">Responder questionário</v-btn>
         </v-alert>
         
       </v-col>
-
-      <v-container id="perguntas">
+        </v-row>
         <v-row
           dense
           v-for="pergunta in perguntas"
